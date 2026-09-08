@@ -7,11 +7,10 @@ public class FirstPPM {
             FileWriter writer = new FileWriter("FirstPPM.ppm");
 
             writer.write("P3\n");
-            // Écriture des dimensions
-            // Écriture de la valeur maximal
-            // Écriture des pixels
-            // Première ligne : rouge, vert, bleu
-            // Deuxième ligne : jaune, blanc, noir
+            writer.write("3 2\n");
+            writer.write("255\n");
+            writer.write("255 0 0 0 255 0 0 0 255\n");
+            writer.write("255 255 0 255 255 255 0 0 0\n");
 
             writer.close(); // Fermeture du fichier
 
