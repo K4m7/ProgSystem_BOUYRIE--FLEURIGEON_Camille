@@ -36,6 +36,19 @@ public class Image {
      * Sauvegarde l'image au format texte PPM (P3)
      */
     public void save_txt(String filename) throws IOException {
-        // TODO : écrire le fichier PPM avec FileWriter
+        
+        try {
+            FileWriter writer = new FileWriter("Image.ppm");
+
+            writer.write("P3\n");
+            writer.write("200 100\n");
+            writer.write("255\n");
+            //TODO Ecrire les couleurs des pixels (boucle for)
+
+        } catch (IOException e) {
+            System.err.println("Erreur lors de la création du fichier : ");
+        }
+
+        
     }
 }
