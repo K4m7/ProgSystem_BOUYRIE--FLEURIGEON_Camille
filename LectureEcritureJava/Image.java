@@ -15,7 +15,7 @@ public class Image {
     /**
      * Constructeur : initialise une image vide.
      */
-    public Image(int wigth, int height) {
+    public Image(int width, int height) {
         this.width = width;
         this.height = height;
         pixels = new int[height][width][3];
@@ -37,18 +37,24 @@ public class Image {
      */
     public void save_txt(String filename) throws IOException {
         
-        try {
-            FileWriter writer = new FileWriter("Image.ppm");
+        try (FileWriter writer = new FileWriter(filename)) { //Ferme automatiquement le fichier
 
             writer.write("P3\n");
             writer.write("200 100\n");
             writer.write("255\n");
-            //TODO Ecrire les couleurs des pixels (boucle for)
-
+            
+            for (int hauteur = 0; hauteur < height; hauteur++) {
+                for (int largeur = 0; largeur < width; largeur++) {
+                    writer.write(pixels[hauteur][largeur][0] + " " +
+                                 pixels[hauteur][largeur][1] + " " +
+                                 pixels[hauteur][largeur][2] + "\n");
+                }
+            }
+          
         } catch (IOException e) {
             System.err.println("Erreur lors de la création du fichier : ");
         }
 
-        
     }
+
 }
