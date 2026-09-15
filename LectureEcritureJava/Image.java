@@ -57,4 +57,42 @@ public class Image {
 
     }
 
+    static public read_txt(String filename) trows IOException {
+        //TODO at home
+    }
+	
+	/**
+     * Sauvegarde l'image au format binaire (P6)
+     */
+    public void save_bin(String filename) throws IOException {
+		
+		private final int NB_PIXEL = 200*100*3;
+		
+		byte[] representationBinaire = new byte[NB_PIXEL];
+        
+        try (FileWriter writer = new FileWriter(filename)) { //Ferme automatiquement le fichier
+
+            writer.write("P6\n");
+            writer.write("200 100\n");
+            writer.write("255\n");
+            
+            for (int hauteur = 0; hauteur < height; hauteur++) {
+                for (int largeur = 0; largeur < width; largeur++) {
+                    writer.write(Integer.toBinaryString(pixels[hauteur][largeur][0]) +
+                                 Integer.toBinaryString(pixels[hauteur][largeur][1]) +
+                                 Integer.toBinaryString(pixels[hauteur][largeur][2]));
+                }
+            }
+          
+        } catch (IOException e) {
+            System.err.println("Erreur lors de la création du fichier : ");
+        }
+
+    }
+	
+	static public read_bin(String filename) trows IOException {
+        //TODO
+    }
+	
+
 }
