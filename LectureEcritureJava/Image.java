@@ -1,5 +1,6 @@
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.FileInputStream;
 
 public class Image {
     
@@ -65,34 +66,80 @@ public class Image {
      * Sauvegarde l'image au format binaire (P6)
      */
     public void save_bin(String filename) throws IOException {
-		
-		private final int NB_PIXEL = 200*100*3;
-		
-		byte[] representationBinaire = new byte[NB_PIXEL];
         
-        try (FileWriter writer = new FileWriter(filename)) { //Ferme automatiquement le fichier
+        // Création du tableau final avec la taille exacte connue à l'avance
+        byte[] tableau = new byte[15014]; //15000 = 100*50*3 + les 16 bits d'entete
 
-            writer.write("P6\n");
-            writer.write("200 100\n");
-            writer.write("255\n");
-            
-            for (int hauteur = 0; hauteur < height; hauteur++) {
-                for (int largeur = 0; largeur < width; largeur++) {
-                    writer.write(Integer.toBinaryString(pixels[hauteur][largeur][0]) +
-                                 Integer.toBinaryString(pixels[hauteur][largeur][1]) +
-                                 Integer.toBinaryString(pixels[hauteur][largeur][2]));
-                }
+        // En-tête "P6\n"
+        tableau[0] = 0x50; // 'P'
+        tableau[1] = 0x36; // '6'
+        tableau[2] = 0x0A; // '\n'
+
+        // Largeur "100" + Espace (0x20) + Hauteur "50" + Saut de ligne (0x0A)
+        tableau[3] = 0x31; // '1'
+        tableau[4] = 0x30; // '0'
+        tableau[5] = 0x30; // '0'
+        tableau[6] = 0x20; // ' '
+        tableau[7] = 0x35; // '5'
+        tableau[8] = 0x30; // '0'
+        tableau[9] = 0x0A; // '\n'
+
+        // Maximum "255\n"
+        tableau[10] = 0x32; // '2'
+        tableau[11] = 0x35; // '5'
+        tableau[12] = 0x35; // '5'
+        tableau[13] = 0x0A; // '\n'
+
+        // Ajout des pixels avec le décalage de l'en-tête (+14)
+        int index = 14;
+
+        for (int hauteur = 0; hauteur < height; y++) {
+            for (int largeur = 0; largeur < width; x++) {
+                // On cast en byte et on applique le masque
+                tableau[index++] = (byte) (pixels[y][x][0] & 0xFF); // R
+                tableau[index++] = (byte) (pixels[y][x][1] & 0xFF); // G
+                tableau[index++] = (byte) (pixels[y][x][2] & 0xFF); // B
             }
-          
-        } catch (IOException e) {
-            System.err.println("Erreur lors de la création du fichier : ");
         }
 
+        // Écriture du fichier
+        try (FileOutputStream fichier = new FileOutputStream(filename)) { 
+            //FileWriter inutilisable ici car char entre -128 et 127
+            fichier.write(tableau);
+
+        } catch (IOException e) {
+            System.err.println("Erreur lors de la création du fichier : " + e.getMessage());
     }
 	
-	static public read_bin(String filename) trows IOException {
-        //TODO
-    }
-	
+	static public read_bin(String filename) throws IOException {
+        
+        // Création d'une image vide aux bonnes dimensions
+        Image img = new Image(100, 50);
+
+        try (FileInputStream file = new FileInputStream(filename)) {
+            
+            // 1. On ignore les 14 octets de l'en-tête ("P6\n100 50\n255\n")
+            file.skip(14);
+            
+            // 2. On lit les pixels et on remplit l'image
+            for (int hauteur = 0; hauteur < img.getHeight(); hauteur++) {
+                for (int largeur = 0; largeur < img.getWidth(); largeur++) {
+
+                    int r = file.read() & 0xFF;
+                    int g = file.read() & 0xFF;
+                    int b = file.read() & 0xFF;
+                    
+                    img.setPixel(largeur, hauteur, r, g, b);
+                }
+            }
+            
+        } catch (IOException e) {
+            System.err.println("Erreur lors de la lecture du fichier : " + e.getMessage());
+        }
+        
+        return img;
+    } //FIXME puisque que la lecture read_bin saute les 14 premiers pixels
+      // dans save_bin on peut juste les supprimer et commencer à save au 
+      // premier pixel de couleur ?
 
 }
