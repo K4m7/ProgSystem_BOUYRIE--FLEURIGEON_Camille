@@ -141,5 +141,6 @@ public class Image {
     } //FIXME puisque que la lecture read_bin saute les 14 premiers pixels
       // dans save_bin on peut juste les supprimer et commencer à save au 
       // premier pixel de couleur ?
+      
 
 }
