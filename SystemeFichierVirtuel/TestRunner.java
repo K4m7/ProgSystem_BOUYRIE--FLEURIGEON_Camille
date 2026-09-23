@@ -4,7 +4,7 @@ public class TestRunner {
         testStep2();
 		testStep3();
 		testStep4();
-		//testStep5();
+		testStep5();
     }
 
 	public static void testStep2() {
