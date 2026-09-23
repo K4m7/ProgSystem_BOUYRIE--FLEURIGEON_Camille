@@ -27,7 +27,7 @@ public class MemoryManager {
     public MemoryManager() {
         this.memory = new byte[TOTAL_MEMORY];
         initializeFilesystem();
-    }+
+    }
 
     private void initializeFilesystem() {
         writeSuperblock();
@@ -39,9 +39,6 @@ public class MemoryManager {
     }
 
     private void writeSuperblock() {
-        // TODO:
-        // Utiliser Utils pour écrire les métadonnées.
-
         Utils.writeString(
                 memory,
                 SUPERBLOCK_OFFSET,
