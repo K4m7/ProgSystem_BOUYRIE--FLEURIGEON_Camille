@@ -99,12 +99,17 @@ public class MemoryManager {
 			return -1;
 		}
 
-		// TODO:
-		// Calculer byteIndex.
-		// Calculer bitPosition.
-		// Lire le bit.
+		int byteIndex = blockNumber / 8;
+		int bitPosition = blockNumber % 8;
+		int offset = BITMAP_OFFSET + byteIndex;
 
-		return -1;
+		int mask = 0x80 >> bitPosition;
+		
+		if ((memory[offset] & mask) != 0) {
+			return 1;
+		} else {
+			return 0;
+		}
 	}
 
 	public int allocateBlock() {
