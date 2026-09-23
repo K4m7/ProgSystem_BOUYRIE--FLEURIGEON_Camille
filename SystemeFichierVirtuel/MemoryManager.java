@@ -120,7 +120,6 @@ public class MemoryManager {
 				return blockNumber;
 			}
 		}
-
 		return -1;
 	}
 }
