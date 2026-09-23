@@ -46,7 +46,7 @@ public class Utils {
 		long sortie = 0;
 		for (int position = 0; position < 8; position++) {
 			int decalage = (7-position) * 8;
-			long octet = memory[offset+position] & 0xFF;
+			long octet = memory[offset+position] & 0xFFL;
 			sortie += (octet << decalage);
 		}
 		return sortie;
