@@ -61,8 +61,32 @@ public class Image {
     }
 
     public static Image read_txt(String filename) throws IOException {
-        //TODO at home
-		return null;
+        File fichier = new File(filename);
+		try (Scanner scanner = new Scanner(fichier)) {
+			
+			// Lecture en-tête PPM (P3)
+			String format = scanner.next(); // Lit "P3"
+			if (!format.equals("P3")) {
+				throw new IOException("Format non supporté (doit être P3)");
+			}	
+			
+			int width = scanner.nextInt();
+			int height = scanner.nextInt();
+			int maxColor = scanner.nextInt();
+			Image img = new Image(width, height);
+
+			// Lecture des pixels (R, G, B)
+			for (int ligne = 0; ligne < height; ligne++) {
+				for (int colonne = 0; colonne < width; colonne++) {
+					int r = scanner.nextInt();
+					int g = scanner.nextInt();
+					int b = scanner.nextInt();
+					
+					img.setPixel(colonne, ligne, r, g, b);
+				}
+			}
+			return img;
+		}
     }
 	
 	/**
