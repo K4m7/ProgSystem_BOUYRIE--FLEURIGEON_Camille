@@ -1,6 +1,8 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
 
 public class Image {
     
@@ -58,8 +60,9 @@ public class Image {
 
     }
 
-    static public read_txt(String filename) trows IOException {
+    public static Image read_txt(String filename) throws IOException {
         //TODO at home
+		return null;
     }
 	
 	/**
@@ -93,12 +96,11 @@ public class Image {
         // Ajout des pixels avec le décalage de l'en-tête (+14)
         int index = 14;
 
-        for (int hauteur = 0; hauteur < height; y++) {
-            for (int largeur = 0; largeur < width; x++) {
-                // On cast en byte et on applique le masque
-                tableau[index++] = (byte) (pixels[y][x][0] & 0xFF); // R
-                tableau[index++] = (byte) (pixels[y][x][1] & 0xFF); // G
-                tableau[index++] = (byte) (pixels[y][x][2] & 0xFF); // B
+        for (int ligne = 0; ligne < height; ligne++) {
+            for (int colonne = 0; colonne < width; colonne++) {
+                tableau[index++] = (byte) (pixels[ligne][colonne][0] & 0xFF); // R
+                tableau[index++] = (byte) (pixels[ligne][colonne][1] & 0xFF); // G
+                tableau[index++] = (byte) (pixels[ligne][colonne][2] & 0xFF); // B
             }
         }
 
@@ -109,9 +111,10 @@ public class Image {
 
         } catch (IOException e) {
             System.err.println("Erreur lors de la création du fichier : " + e.getMessage());
+		}
     }
 	
-	static public read_bin(String filename) throws IOException {
+	public static Image read_bin(String filename) throws IOException {
         
         // Création d'une image vide aux bonnes dimensions
         Image img = new Image(100, 50);
@@ -138,9 +141,5 @@ public class Image {
         }
         
         return img;
-    } //FIXME puisque que la lecture read_bin saute les 14 premiers pixels
-      // dans save_bin on peut juste les supprimer et commencer à save au 
-      // premier pixel de couleur ?
-      
-
+    }
 }
