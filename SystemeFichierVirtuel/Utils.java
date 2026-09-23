@@ -78,10 +78,16 @@ public class Utils {
 			int offset,
 			int maxLength) {
 
-		// TODO:
-		// Lire jusqu'au premier octet nul
-		// ou jusqu'à maxLength.
-
-		return "";
+		int longueurString = 0;
+		while (longueurString < maxLength && memory[offset + longueurString] != 0) {
+			longueurString++;
+		}
+		
+		byte[] octetsString = new byte[longueurString];
+		for (int position = 0 ; position < longueurString; position++) {
+			octetsString[position] = memory[offset+position];
+		}
+		
+		return new String(octetsString);
 	}
 }
