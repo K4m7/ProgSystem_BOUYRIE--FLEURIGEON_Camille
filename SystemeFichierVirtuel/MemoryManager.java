@@ -35,7 +35,7 @@ public class MemoryManager {
 		for (int offset = BITMAP_OFFSET; offset < BITMAP_OFFSET+16; offset++){
 			memory[offset] = (byte) 0xFF;
 		}
-		memory[BITMAP_OFFSET+16] = (byte) 0xFF;
+		memory[BITMAP_OFFSET+16] = (byte) 0x80;
     }
 
     private void writeSuperblock() {
