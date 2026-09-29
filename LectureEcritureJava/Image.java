@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-
+ 
 public class Image {
     
     //Nous aurions pu remplacer les int en byte afin de gagner en place mémoire.
