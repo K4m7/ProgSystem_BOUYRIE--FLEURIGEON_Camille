@@ -122,4 +122,6 @@ public class MemoryManager {
 		}
 		return -1;
 	}
+	
+	//TESTER LES ASSERT !!! javac -ea !!! (étape 5 en échec 5 en echec)
 }
