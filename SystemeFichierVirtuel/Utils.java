@@ -1,5 +1,5 @@
 public class Utils {
-
+ 
     public static int writeInt(byte[] memory, int offset, int value) {
 		memory[offset] = (byte) (value >> 24 & 0xFF);
 		memory[offset + 1] = (byte) (value >> 16 & 0xFF);
