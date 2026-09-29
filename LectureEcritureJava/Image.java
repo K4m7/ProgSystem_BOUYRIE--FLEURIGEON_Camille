@@ -82,9 +82,22 @@ public class Image {
 	     *   si le fichier n'existe pas ou que le format est incorrect 
 		 *       alors la méthode ne peux pas trouver de solution à l'erreur par elle-même
 		 *   puis on continue la propagation de l'exception au bloc supérieur (exemple dans cours de BUT1)
+		 *   --> j'ai tout de même ajouté le catch en le justifiant (voir plus bas)
 		 *
 		 * + J'ai ajouté un dossier comprenant le morceau de cours que j'ai utilisé pour répondre à cela si cela vous intéresse.
 		 */
+		 
+		 /*
+		  * Justification : ce bloc etait-il vraiment utile ?
+		  * Selon moi, oui puisque sans lui si une erreur est relevée le bloc s'arrête brutalement 
+		  * sans fermer le fichier et donc ne "nettoie pas complètement le contexte" --> voir page 6 point n°3
+		  */
+		  
+		  /* 
+		   * Que faire de mieux ? 
+		   * 1. Ajouter le bloc catch --> done
+		   * 2. TODO
+		   */
 			
 			// Lecture en-tête PPM (P3)
 			String format = scanner.next(); // Lit "P3"
@@ -108,6 +121,10 @@ public class Image {
 				}
 			}
 			return img;
+		} catch (IOException e) { 
+		//Ajout du catch pour respecter les bonnes pratiques de code explicitées par mon professeur de BUT1.
+		//On écrit tout de même dans le fichier err même si le bloc n'est pas indispesable.
+            System.err.println("Erreur lors de la lecture du fichier : " + e.getMessage());
 		}
     }
 	
