@@ -62,7 +62,29 @@ public class Image {
 
     public static Image read_txt(String filename) throws IOException {
         File fichier = new File(filename);
-		try (Scanner scanner = new Scanner(fichier)) {
+		try (Scanner scanner = new Scanner(fichier)) { 
+		/* Justification de l'usage du Scanner dans le try et de l'absence de catch
+         *		
+		 * - entre les parenthèses --> bloc à surveiller : 
+		 *   cette expression ferme automatiquement le fichier et 
+		 *	 permet de ne pas avoir à écrire le bloc finally
+		 * 
+		 *   si toutes les opérations réussissent (comme scanner.nextInt()) alors on referme le scanner
+         *       ou si une exception est relevée alors avant de propager l'exception et donc de quitter le 
+         *       try il est aussi refermé automatiquement. 
+		 *
+		 *   --> scanner.close() était la méthode utilisée pour cela en BUT1 et 
+		 *   cette méthode est celle qu'une IA m'a proposé, pour optimiser mon programme, 
+		 *   que j'ai comprise et ajouter à mon code.	
+         *   En temps normal j'aurais donc écrit le bloc finally en y ajoutant scanner.close();		 
+		 * 
+		 * - absence de catch : il s'agit d'un signalement de l'échec par propagation au bloc supérieur (cours BUT1)
+	     *   si le fichier n'existe pas ou que le format est incorrect 
+		 *       alors la méthode ne peux pas trouver de solution à l'erreur par elle-même
+		 *   puis on continue la propagation de l'exception au bloc supérieur (exemple dans cours de BUT1)
+		 *
+		 * + J'ai ajouté un dossier comprenant le morceau de cours que j'ai utilisé pour répondre à cela si cela vous intéresse.
+		 */
 			
 			// Lecture en-tête PPM (P3)
 			String format = scanner.next(); // Lit "P3"
