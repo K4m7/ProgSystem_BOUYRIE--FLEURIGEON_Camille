@@ -15,7 +15,12 @@ public class Inode {
     }
 
     public int getInodeOffset() {
-        return 1024 + this.inodeNumber * 4;
+        return MemoryManager.INODE_TABLE_OFFSET + (this.inodeNumber * INODE_SIZE); 
+			   //INODE_TABLE_OFFSET = 2 * BLOCK_SIZE --> adresse de base
+			   //this.inodeNumber --> numéro de l'inode que l'on veut cibler
+			   //INODE_SIZE --> taille en octets d'un seul inode
+			   //Soit : [Début de la table des inodes] 
+			   //	  + [La taille occupée par tous les inodes précédents]
     }
 
     public int getFileType() {
