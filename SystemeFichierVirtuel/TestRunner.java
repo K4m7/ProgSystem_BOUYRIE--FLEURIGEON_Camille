@@ -11,8 +11,18 @@ public class TestRunner {
 		testStep8();
 		testStep9();
 		testStep10("test.txt"); //Effectuée avec un guide par une IA 
-									  //afin de mieux comprendre les éxplication de l'étape 11
-    }
+								//afin de mieux comprendre les éxplication de l'étape 11
+		if (args.length > 0) {
+			testStep10(args[0]);
+		} else {
+			System.out.println(
+					"[INFO] Aucun fichier externe fourni.");
+		}
+
+		System.out.println(
+				"=== TOUS LES TESTS SONT TERMINÉS ===");
+		//rappel exécution avec : java -ea TestRunner.java "test.txt"
+	}
 
 	public static void testStep2() {
 		System.out.println("=== TEST ÉTAPE 2 : Utils Entiers ===");
