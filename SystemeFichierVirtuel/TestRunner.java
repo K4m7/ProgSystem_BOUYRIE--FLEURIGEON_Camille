@@ -1,3 +1,4 @@
+import java.io.*; //Donné par un IA car je ne savais pas qu'il fallait l'ajouter
 public class TestRunner {
 
 	public static void main(String[] args) {
@@ -9,7 +10,8 @@ public class TestRunner {
 		testStep7();
 		testStep8();
 		testStep9();
-		//testExternalFile();
+		testStep10("test.txt"); //Effectuée avec un guide par une IA 
+									  //afin de mieux comprendre les éxplication de l'étape 11
     }
 
 	public static void testStep2() {
@@ -396,12 +398,12 @@ public class TestRunner {
 
 		System.out.println("[OK] Étape 9 validée !");
 	}
-	/*
-	public static void testExternalFile(
+	
+	public static void testStep10( //Test renommé pour être identique à la forme donnée à l'étape 12.
 			String filename) {
 
 		System.out.println(
-				"=== TEST FICHIER EXTERNE ===");
+				"=== TEST ÉTAPE 10 : Fichier externe ===");
 
 		StringBuilder builder =
 				new StringBuilder();
@@ -468,5 +470,5 @@ public class TestRunner {
 
 		System.out.println(
 				"[OK] Fichier externe correctement transféré !");
-	}*/
+	}
 }
