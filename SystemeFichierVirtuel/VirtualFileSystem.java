@@ -67,4 +67,105 @@ public class VirtualFileSystem {
     public MemoryManager getMemoryManager() {
         return memoryManager;
     }
+	
+	public boolean writeFile(
+			int inodeNum,
+			byte[] data) {
+
+		int blocksNeeded =
+				(data.length
+				+ MemoryManager.BLOCK_SIZE - 1)
+				/ MemoryManager.BLOCK_SIZE;
+
+		if (blocksNeeded > Inode.DIRECT_POINTERS) {
+			return false;
+		}
+
+		int[] blockPointers = new int[Inode.DIRECT_POINTERS];
+
+		// Allouer blocksNeeded blocs.
+		for (int numBlock = 0; numBlock < blocksNeeded; numBlock++) { //s'exécute pour tous les blocs à allouer
+            int block = memoryManager.allocateBlock();
+            if (block == -1) { //Renvoyé par allocateBlock()
+                return false; // Échec si la mémoire est pleine
+            }
+			// Stocker le n° de bloc physique alloué (block) 
+			// dans le tableau blockPointers à la position numBlock
+            blockPointers[numBlock] = block;
+        }
+		
+		byte[] memory = memoryManager.getFilesystemMemory();
+		int bytesRemaining = data.length;
+		int dataSrcOffset = 0;
+
+		for (int block = 0; block < blocksNeeded; block++) { //Parcours des blocs
+			// calculer la quantité à copier : 512 octets (BLOCK_SIZE) ou ce qui reste (bytesRemaining)
+			int bytesToCopy = Math.min(bytesRemaining, MemoryManager.BLOCK_SIZE); 
+			
+			// récupérer le numéro du bloc
+			int blockNum = blockPointers[block];
+			
+			// calculer son offset physique = adresse de départ exacte (en octets)
+			int offsetPhysique = blockNum * MemoryManager.BLOCK_SIZE;
+			
+			// copier les données.
+			// parcourt de chaque octet du fragment à copier (0 jusqu'à bytesToCopy-1)
+            for (int octet = 0; octet < bytesToCopy; octet++) {
+				// Copie l'octet depuis data à partir de dataSrcOffset + octet
+				// vers emplacement physique exact dans memory
+                memory[offsetPhysique + octet] = data[dataSrcOffset + octet];
+            }
+			
+			//Avance le curseur de lecture de dataSrcOffset 
+			//du nombre d'octets qui viennent d'être écrits
+            dataSrcOffset += bytesToCopy;
+			//On retire les bytes déjà copiés de bytesRemaining
+            bytesRemaining -= bytesToCopy;
+        }
+
+		// Mettre à jour l'inode.
+		Inode inode = new Inode(memoryManager, inodeNum);
+        long now = System.currentTimeMillis(); //Pour fixer les dates de création et de modification
+
+        inode.writeToMemory(
+                1,                  // Type : fichier
+                data.length,        // Taille totale du fichier
+                now,                // Date de création
+                now,                // Date de modification
+                blockPointers,      // Table de pointeurs de blocs
+                0,                  // Pointeur indirect
+                (short) 0644,       // Permissions --> cast obligatoire !
+                1                   // Nb Liens (minimum)
+        );
+		return true;
+	}
+	
+	public byte[] readFile(int inodeNum) {
+		Inode inode = new Inode(memoryManager, inodeNum);
+		int fileSize = inode.getFileSize();
+
+		if (fileSize == 0) {
+			return new byte[0];
+		}
+
+		byte[] fileData = new byte[fileSize];
+		byte[] memory = memoryManager.getFilesystemMemory();
+		int[] blockPointers = inode.getDirectPointers();
+
+		// Parcourir les blocs utilisés.
+		// Difficultés à résoudre par moi-même 
+		// Suggestion par une IA puis adaptation par mes soin de : 
+        // "System.arraycopy(src, srcPos, dest, destPos, length);"
+		for (int block = 0; block * MemoryManager.BLOCK_SIZE < fileSize; block++) {
+			// adresse physique de départ (en octets) du bloc courant dans le tableau memory
+            int addDepart = blockPointers[block] * MemoryManager.BLOCK_SIZE;
+            // adresse où placer les octets dans le tableau fileData
+			int addDestination = block * MemoryManager.BLOCK_SIZE;
+            // Nombre d'octets à transférer : 512 octets (BLOCK_SIZE) ou ce qui reste (bytesRemaining)
+			int nbOctetsTransfert = Math.min(MemoryManager.BLOCK_SIZE, fileSize - addDestination);
+
+            System.arraycopy(memory, addDepart, fileData, addDestination, nbOctetsTransfert);
+        }
+		return fileData;
+	}
 }

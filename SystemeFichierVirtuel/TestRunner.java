@@ -8,7 +8,7 @@ public class TestRunner {
 		testStep6();
 		testStep7();
 		testStep8();
-		//testStep9();
+		testStep9();
 		//testExternalFile();
     }
 
@@ -347,7 +347,7 @@ public class TestRunner {
 
 		System.out.println("[OK] Étape 8 validée !");
 	}
-	/*
+	
 	public static void testStep9() {
 		System.out.println("=== TEST ÉTAPE 9 : Entrées/Sorties Fichier ===");
 
