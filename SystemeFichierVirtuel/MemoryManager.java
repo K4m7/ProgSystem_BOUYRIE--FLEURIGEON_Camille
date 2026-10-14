@@ -31,11 +31,9 @@ public class MemoryManager {
 
     private void initializeFilesystem() {
         writeSuperblock();
-
-		for (int offset = BITMAP_OFFSET; offset < BITMAP_OFFSET+16; offset++){
-			memory[offset] = (byte) 0xFF;
-		}
-		memory[BITMAP_OFFSET+16] = (byte) 0x80;
+		for (int offset=0 ; offset < 16; offset++){
+            memory[BLOCK_SIZE + offset] = (byte) 0xFF;
+        }
     }
 
     private void writeSuperblock() {
@@ -83,10 +81,12 @@ public class MemoryManager {
 		int bitPosition = blockNumber % 8;
 		int offset = BITMAP_OFFSET + byteIndex;
 
+		byte mask = (byte) (1 << bitPosition);
+		
 		if (used) {
-			memory[offset] |= (byte) (0x80 >> bitPosition);
+			memory[offset] |= (byte) mask;
 		} else {
-			memory[offset] &= (byte) ~(0x80 >> bitPosition);
+			memory[offset] &= (byte) ~mask;
 		}
 
 		return true;
@@ -103,13 +103,9 @@ public class MemoryManager {
 		int bitPosition = blockNumber % 8;
 		int offset = BITMAP_OFFSET + byteIndex;
 
-		int mask = 0x80 >> bitPosition;
-		
-		if ((memory[offset] & mask) != 0) {
-			return 1;
-		} else {
-			return 0;
-		}
+		return (memory[offset] >> bitPosition) & 1; //masque : compare chaque bit du résultat 
+		//précédent avec le nombre 1 et met tous les autres bits à 0 et ne conserve que la valeur du 
+		//tout premier bit
 	}
 
 	public int allocateBlock() {
