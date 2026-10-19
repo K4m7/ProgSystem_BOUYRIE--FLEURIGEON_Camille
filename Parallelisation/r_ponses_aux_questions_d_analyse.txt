@@ -1,0 +1,72 @@
+======================================================================
+                  QUESTIONS D'ANALYSE - PARALLÉLISME
+======================================================================
+
+----------------------------------------------------------------------
+1. PERFORMANCE : Quelle version est la plus rapide ? Pourquoi ?
+----------------------------------------------------------------------
+
+L'ANALOGIE : Le chantier de construction (Signer des papiers vs Construire des maisons)
+
+• En théorie (Attendu) :
+  La version parallèle devrait être beaucoup plus rapide car elle exploite 
+  plusieurs cœurs de votre processeur (CPU) en même temps. C'est comme avoir 
+  plusieurs ouvriers sur un chantier au lieu d'un seul ouvrier qui fait tout.
+
+• En pratique (La réalité de notre test) :
+  Dans notre exercice, les calculs de base sont extrêmement courts. 
+  - Version Séquentielle (1 seul ouvrier) : L'ouvrier signe les 10 papiers 
+    à la suite. Cela lui prend 1 milliseconde.
+  - Version Parallèle (10 ouvriers) : Vous devez passer des coups de téléphone, 
+    recruter 10 ouvriers, leur donner un stylo et une feuille chacun, puis 
+    les coordonner. Recruter et organiser l'équipe demande de l'énergie et du 
+    temps (ce qu'on appelle l'"overhead" ou coût de gestion des threads).
+
+• Le bilan :
+  Pour de tout petits calculs, la version parallèle peut être Légèrement PLUS LENTE 
+  que la version séquentielle car créer et gérer des threads prend plus de temps 
+  que de faire le calcul lui-même !
+
+• Quand le parallèle devient-il imbattable ?
+  Si la tâche devient très lourde (ex: construire 10 maisons au lieu de signer 
+  10 papiers), le temps passé à organiser les ouvriers (quelques secondes) 
+  devient insignifiant par rapport aux mois de travail économisés grâce au parallélisme.
+
+• Note pour aller plus loin (ExecutorService / Callable) :
+  Plutôt que de "recruter et licencier" des ouvriers à chaque tâche (créer/détruire des 
+  threads), il est préférable d'utiliser une "équipe permanente d'ouvriers" toujours prêts 
+  dans une salle d'attente (un pool de threads avec `ExecutorService`). Cela supprime 
+  le temps de création des threads.
+
+
+----------------------------------------------------------------------
+2. RÉSULTATS : Sont-ils identiques ? Pourquoi pas de "Race Condition" ?
+----------------------------------------------------------------------
+
+L'ANALOGIE : Les seaux d'eau
+
+• Les résultats :
+  Oui, les résultats sont 100% identiques entre la version séquentielle et la 
+  version parallèle.
+
+• Qu'est-ce qu'une "Race Condition" (Condition de concurrence) ?
+  Imaginez 10 ouvriers qui essaient TOUS EN MÊME TEMPS de verser un verre d'eau 
+  dans un seul et même seau. Ils vont se bousculer, renverser de l'eau par terre, 
+  et le volume d'eau final dans le seau sera faux. 
+  En informatique, cela arrive quand plusieurs threads essaient de modifier la 
+  MÊME variable en même temps.
+
+• Pourquoi il n'y a PAS de Race Condition dans notre code ?
+  Nous évitons ce problème grâce à une organisation très stricte en 3 étapes :
+
+  1. Travail isolé : Chaque ouvrier (thread) fait son calcul sur sa propre donnée, 
+     dans son propre coin, sur sa feuille personnelle (`resultat`). Ils ne touchent 
+     à aucune variable commune.
+  2. Pause générale (`join()`) : Le chef de chantier (le thread principal `main`) 
+     attend sagement avec `.join()` que TOUS les ouvriers aient fini leur travail.
+  3. Récolte séquentielle : Une fois les ouvriers arrêtés, le chef passe voir chaque 
+     ouvrier UN PAR UN pour récupérer leur chiffre et les additionner dans la variable 
+     finale (`sommeTotale`).
+
+  Comme l'addition finale se fait dans un seul thread (le chef) alors que les autres 
+  sont au repos, personne ne se bouscule : il n'y a aucun risque de Race Condition.

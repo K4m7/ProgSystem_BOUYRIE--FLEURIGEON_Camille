@@ -1,0 +1,1183 @@
+		1ER TEST : Sur 50 test simples 
+
+java TestCompteur.java 
+Test 1 : obtenu = 3532227
+Attendu = 9999999 ERREUR (perdu : 6467772)
+Test 2 : obtenu = 2919707
+Attendu = 9999999 ERREUR (perdu : 7080292)
+Test 3 : obtenu = 6240266
+Attendu = 9999999 ERREUR (perdu : 3759733)
+Test 4 : obtenu = 4985019
+Attendu = 9999999 ERREUR (perdu : 5014980)
+Test 5 : obtenu = 6750620
+Attendu = 9999999 ERREUR (perdu : 3249379)
+Test 6 : obtenu = 9379168
+Attendu = 9999999 ERREUR (perdu : 620831)
+Test 7 : obtenu = 7025910
+Attendu = 9999999 ERREUR (perdu : 2974089)
+Test 8 : obtenu = 4089614
+Attendu = 9999999 ERREUR (perdu : 5910385)
+Test 9 : obtenu = 6411589
+Attendu = 9999999 ERREUR (perdu : 3588410)
+Test 10 : obtenu = 5294438
+Attendu = 9999999 ERREUR (perdu : 4705561)
+Test 11 : obtenu = 6164166
+Attendu = 9999999 ERREUR (perdu : 3835833)
+Test 12 : obtenu = 9956975
+Attendu = 9999999 ERREUR (perdu : 43024)
+Test 13 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 14 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 15 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 16 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 17 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 18 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 19 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 20 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 21 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 22 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 23 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 24 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 25 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 26 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 27 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 28 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 29 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 30 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 31 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 32 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 33 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 34 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 35 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 36 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 37 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 38 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 39 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 40 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 41 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 42 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 43 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 44 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 45 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 46 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 47 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 48 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 49 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 50 : obtenu = 9999999
+Attendu = 9999999 OK
+
+		2E TEST : Sur 50 test simples avec bilan
+java TestCompteur.java 
+Test 1 : obtenu = 8849735
+Attendu = 9999999 ERREUR (perdu : 1150264)
+Test 2 : obtenu = 6114239
+Attendu = 9999999 ERREUR (perdu : 3885760)
+Test 3 : obtenu = 4174995
+Attendu = 9999999 ERREUR (perdu : 5825004)
+Test 4 : obtenu = 8463702
+Attendu = 9999999 ERREUR (perdu : 1536297)
+Test 5 : obtenu = 5642780
+Attendu = 9999999 ERREUR (perdu : 4357219)
+Test 6 : obtenu = 8241755
+Attendu = 9999999 ERREUR (perdu : 1758244)
+Test 7 : obtenu = 5510698
+Attendu = 9999999 ERREUR (perdu : 4489301)
+Test 8 : obtenu = 7247337
+Attendu = 9999999 ERREUR (perdu : 2752662)
+Test 9 : obtenu = 7579623
+Attendu = 9999999 ERREUR (perdu : 2420376)
+Test 10 : obtenu = 7402737
+Attendu = 9999999 ERREUR (perdu : 2597262)
+Test 11 : obtenu = 7163395
+Attendu = 9999999 ERREUR (perdu : 2836604)
+Test 12 : obtenu = 7508528
+Attendu = 9999999 ERREUR (perdu : 2491471)
+Test 13 : obtenu = 6335309
+Attendu = 9999999 ERREUR (perdu : 3664690)
+Test 14 : obtenu = 6499865
+Attendu = 9999999 ERREUR (perdu : 3500134)
+Test 15 : obtenu = 9991007
+Attendu = 9999999 ERREUR (perdu : 8992)
+Test 16 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 17 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 18 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 19 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 20 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 21 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 22 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 23 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 24 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 25 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 26 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 27 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 28 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 29 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 30 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 31 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 32 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 33 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 34 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 35 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 36 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 37 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 38 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 39 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 40 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 41 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 42 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 43 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 44 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 45 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 46 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 47 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 48 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 49 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 50 : obtenu = 9999999
+Attendu = 9999999 OK
+
+----- BILAN -----
+Threads            : 9
+Incréments/thread  : 1111111
+Résultats corrects : 35/50 (70.0 %)
+Minimum obtenu     : 4174995
+Maximum obtenu     : 9999999
+Attendu            : 9999999
+
+			Expérience 1 : impact du nombre de threads (on garde NB_INCREMENTS = 1111111)
+		3E TEST : Sur 50 test simples avec bilan + NB_THREADS = 1
+java TestCompteur.java 
+Test 1 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 2 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 3 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 4 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 5 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 6 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 7 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 8 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 9 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 10 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 11 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 12 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 13 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 14 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 15 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 16 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 17 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 18 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 19 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 20 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 21 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 22 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 23 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 24 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 25 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 26 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 27 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 28 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 29 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 30 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 31 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 32 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 33 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 34 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 35 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 36 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 37 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 38 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 39 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 40 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 41 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 42 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 43 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 44 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 45 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 46 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 47 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 48 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 49 : obtenu = 1111111
+Attendu = 1111111 OK
+Test 50 : obtenu = 1111111
+Attendu = 1111111 OK
+
+----- BILAN -----
+Threads            : 1
+Incréments/thread  : 1111111
+Résultats corrects : 50/50 (100.0 %)
+Minimum obtenu     : 1111111
+Maximum obtenu     : 1111111
+Attendu            : 1111111
+
+		4E TEST : Sur 50 test simples avec bilan + NB_THREADS = 2
+java TestCompteur.java 
+Test 1 : obtenu = 2206221
+Attendu = 2222222 ERREUR (perdu : 16001)
+Test 2 : obtenu = 2198829
+Attendu = 2222222 ERREUR (perdu : 23393)
+Test 3 : obtenu = 1711363
+Attendu = 2222222 ERREUR (perdu : 510859)
+Test 4 : obtenu = 2186054
+Attendu = 2222222 ERREUR (perdu : 36168)
+Test 5 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 6 : obtenu = 1111111
+Attendu = 2222222 ERREUR (perdu : 1111111)
+Test 7 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 8 : obtenu = 2199604
+Attendu = 2222222 ERREUR (perdu : 22618)
+Test 9 : obtenu = 1189379
+Attendu = 2222222 ERREUR (perdu : 1032843)
+Test 10 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 11 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 12 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 13 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 14 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 15 : obtenu = 2199052
+Attendu = 2222222 ERREUR (perdu : 23170)
+Test 16 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 17 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 18 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 19 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 20 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 21 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 22 : obtenu = 1249290
+Attendu = 2222222 ERREUR (perdu : 972932)
+Test 23 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 24 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 25 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 26 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 27 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 28 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 29 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 30 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 31 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 32 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 33 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 34 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 35 : obtenu = 2200211
+Attendu = 2222222 ERREUR (perdu : 22011)
+Test 36 : obtenu = 1358816
+Attendu = 2222222 ERREUR (perdu : 863406)
+Test 37 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 38 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 39 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 40 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 41 : obtenu = 1571431
+Attendu = 2222222 ERREUR (perdu : 650791)
+Test 42 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 43 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 44 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 45 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 46 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 47 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 48 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 49 : obtenu = 2222222
+Attendu = 2222222 OK
+Test 50 : obtenu = 2222222
+Attendu = 2222222 OK
+
+----- BILAN -----
+Threads            : 2
+Incréments/thread  : 1111111
+Résultats corrects : 38/50 (76.0 %)
+Minimum obtenu     : 1111111
+Maximum obtenu     : 2222222
+Attendu            : 2222222
+
+		5E TEST : Sur 50 test simples avec bilan + NB_THREADS = 5
+java TestCompteur.java 
+Test 1 : obtenu = 4042308
+Attendu = 5555555 ERREUR (perdu : 1513247)
+Test 2 : obtenu = 4493559
+Attendu = 5555555 ERREUR (perdu : 1061996)
+Test 3 : obtenu = 3278708
+Attendu = 5555555 ERREUR (perdu : 2276847)
+Test 4 : obtenu = 3884037
+Attendu = 5555555 ERREUR (perdu : 1671518)
+Test 5 : obtenu = 5413825
+Attendu = 5555555 ERREUR (perdu : 141730)
+Test 6 : obtenu = 4461536
+Attendu = 5555555 ERREUR (perdu : 1094019)
+Test 7 : obtenu = 5374620
+Attendu = 5555555 ERREUR (perdu : 180935)
+Test 8 : obtenu = 4508201
+Attendu = 5555555 ERREUR (perdu : 1047354)
+Test 9 : obtenu = 5502280
+Attendu = 5555555 ERREUR (perdu : 53275)
+Test 10 : obtenu = 4660047
+Attendu = 5555555 ERREUR (perdu : 895508)
+Test 11 : obtenu = 4296133
+Attendu = 5555555 ERREUR (perdu : 1259422)
+Test 12 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 13 : obtenu = 5295438
+Attendu = 5555555 ERREUR (perdu : 260117)
+Test 14 : obtenu = 3861963
+Attendu = 5555555 ERREUR (perdu : 1693592)
+Test 15 : obtenu = 4500042
+Attendu = 5555555 ERREUR (perdu : 1055513)
+Test 16 : obtenu = 3614828
+Attendu = 5555555 ERREUR (perdu : 1940727)
+Test 17 : obtenu = 3903511
+Attendu = 5555555 ERREUR (perdu : 1652044)
+Test 18 : obtenu = 3459221
+Attendu = 5555555 ERREUR (perdu : 2096334)
+Test 19 : obtenu = 3871429
+Attendu = 5555555 ERREUR (perdu : 1684126)
+Test 20 : obtenu = 3836734
+Attendu = 5555555 ERREUR (perdu : 1718821)
+Test 21 : obtenu = 5123508
+Attendu = 5555555 ERREUR (perdu : 432047)
+Test 22 : obtenu = 1111111
+Attendu = 5555555 ERREUR (perdu : 4444444)
+Test 23 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 24 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 25 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 26 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 27 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 28 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 29 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 30 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 31 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 32 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 33 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 34 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 35 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 36 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 37 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 38 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 39 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 40 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 41 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 42 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 43 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 44 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 45 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 46 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 47 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 48 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 49 : obtenu = 5555555
+Attendu = 5555555 OK
+Test 50 : obtenu = 5555555
+Attendu = 5555555 OK
+
+----- BILAN -----
+Threads            : 5
+Incréments/thread  : 1111111
+Résultats corrects : 29/50 (58.0 %)
+Minimum obtenu     : 1111111
+Maximum obtenu     : 5555555
+Attendu            : 5555555
+
+		6E TEST : Sur 50 test simples avec bilan + NB_THREADS = 10
+java TestCompteur.java 
+Test 1 : obtenu = 6660192
+Attendu = 11111110 ERREUR (perdu : 4450918)
+Test 2 : obtenu = 9275210
+Attendu = 11111110 ERREUR (perdu : 1835900)
+Test 3 : obtenu = 4477365
+Attendu = 11111110 ERREUR (perdu : 6633745)
+Test 4 : obtenu = 4946203
+Attendu = 11111110 ERREUR (perdu : 6164907)
+Test 5 : obtenu = 7059835
+Attendu = 11111110 ERREUR (perdu : 4051275)
+Test 6 : obtenu = 8027526
+Attendu = 11111110 ERREUR (perdu : 3083584)
+Test 7 : obtenu = 7120137
+Attendu = 11111110 ERREUR (perdu : 3990973)
+Test 8 : obtenu = 10183838
+Attendu = 11111110 ERREUR (perdu : 927272)
+Test 9 : obtenu = 9850552
+Attendu = 11111110 ERREUR (perdu : 1260558)
+Test 10 : obtenu = 8155453
+Attendu = 11111110 ERREUR (perdu : 2955657)
+Test 11 : obtenu = 7723343
+Attendu = 11111110 ERREUR (perdu : 3387767)
+Test 12 : obtenu = 7446995
+Attendu = 11111110 ERREUR (perdu : 3664115)
+Test 13 : obtenu = 7807551
+Attendu = 11111110 ERREUR (perdu : 3303559)
+Test 14 : obtenu = 8006409
+Attendu = 11111110 ERREUR (perdu : 3104701)
+Test 15 : obtenu = 5892458
+Attendu = 11111110 ERREUR (perdu : 5218652)
+Test 16 : obtenu = 7621869
+Attendu = 11111110 ERREUR (perdu : 3489241)
+Test 17 : obtenu = 9994206
+Attendu = 11111110 ERREUR (perdu : 1116904)
+Test 18 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 19 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 20 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 21 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 22 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 23 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 24 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 25 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 26 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 27 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 28 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 29 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 30 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 31 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 32 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 33 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 34 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 35 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 36 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 37 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 38 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 39 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 40 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 41 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 42 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 43 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 44 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 45 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 46 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 47 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 48 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 49 : obtenu = 11111110
+Attendu = 11111110 OK
+Test 50 : obtenu = 11111110
+Attendu = 11111110 OK
+
+----- BILAN -----
+Threads            : 10
+Incréments/thread  : 1111111
+Résultats corrects : 33/50 (66.0 %)
+Minimum obtenu     : 4477365
+Maximum obtenu     : 11111110
+Attendu            : 11111110
+
+INTERPRETATION ET CONCLUSION DES TESTS 3 à 6 : 
+1 thread   : 50/50, car il n’y a personne avec qui entrer en collision.
+2 threads  : déjà des erreurs.
+2(+) threads : de plus en plus d’erreurs et un écart de plus en plus grand par rapport à l’attendu.
+
+			Expérience 2 : impact du nombre d’incréments (on garde NB_THREADS = 9)
+		7E TEST : Sur 50 test simples avec bilan + NB_INCREMENTS = 100
+java TestCompteur.java 
+Test 1 : obtenu = 900
+Attendu = 900 OK
+Test 2 : obtenu = 900
+Attendu = 900 OK
+Test 3 : obtenu = 900
+Attendu = 900 OK
+Test 4 : obtenu = 900
+Attendu = 900 OK
+Test 5 : obtenu = 900
+Attendu = 900 OK
+Test 6 : obtenu = 900
+Attendu = 900 OK
+Test 7 : obtenu = 900
+Attendu = 900 OK
+Test 8 : obtenu = 900
+Attendu = 900 OK
+Test 9 : obtenu = 900
+Attendu = 900 OK
+Test 10 : obtenu = 900
+Attendu = 900 OK
+Test 11 : obtenu = 900
+Attendu = 900 OK
+Test 12 : obtenu = 900
+Attendu = 900 OK
+Test 13 : obtenu = 900
+Attendu = 900 OK
+Test 14 : obtenu = 900
+Attendu = 900 OK
+Test 15 : obtenu = 900
+Attendu = 900 OK
+Test 16 : obtenu = 900
+Attendu = 900 OK
+Test 17 : obtenu = 900
+Attendu = 900 OK
+Test 18 : obtenu = 900
+Attendu = 900 OK
+Test 19 : obtenu = 900
+Attendu = 900 OK
+Test 20 : obtenu = 900
+Attendu = 900 OK
+Test 21 : obtenu = 900
+Attendu = 900 OK
+Test 22 : obtenu = 900
+Attendu = 900 OK
+Test 23 : obtenu = 900
+Attendu = 900 OK
+Test 24 : obtenu = 900
+Attendu = 900 OK
+Test 25 : obtenu = 900
+Attendu = 900 OK
+Test 26 : obtenu = 900
+Attendu = 900 OK
+Test 27 : obtenu = 900
+Attendu = 900 OK
+Test 28 : obtenu = 900
+Attendu = 900 OK
+Test 29 : obtenu = 900
+Attendu = 900 OK
+Test 30 : obtenu = 900
+Attendu = 900 OK
+Test 31 : obtenu = 900
+Attendu = 900 OK
+Test 32 : obtenu = 900
+Attendu = 900 OK
+Test 33 : obtenu = 900
+Attendu = 900 OK
+Test 34 : obtenu = 900
+Attendu = 900 OK
+Test 35 : obtenu = 900
+Attendu = 900 OK
+Test 36 : obtenu = 900
+Attendu = 900 OK
+Test 37 : obtenu = 900
+Attendu = 900 OK
+Test 38 : obtenu = 900
+Attendu = 900 OK
+Test 39 : obtenu = 900
+Attendu = 900 OK
+Test 40 : obtenu = 900
+Attendu = 900 OK
+Test 41 : obtenu = 900
+Attendu = 900 OK
+Test 42 : obtenu = 900
+Attendu = 900 OK
+Test 43 : obtenu = 900
+Attendu = 900 OK
+Test 44 : obtenu = 900
+Attendu = 900 OK
+Test 45 : obtenu = 900
+Attendu = 900 OK
+Test 46 : obtenu = 900
+Attendu = 900 OK
+Test 47 : obtenu = 900
+Attendu = 900 OK
+Test 48 : obtenu = 900
+Attendu = 900 OK
+Test 49 : obtenu = 900
+Attendu = 900 OK
+Test 50 : obtenu = 900
+Attendu = 900 OK
+
+----- BILAN -----
+Threads            : 9
+Incréments/thread  : 100
+Résultats corrects : 50/50 (100.0 %)
+Minimum obtenu     : 900
+Maximum obtenu     : 900
+Attendu            : 900
+		
+		8E TEST : Sur 50 test simples avec bilan + NB_INCREMENTS = 10000
+java TestCompteur.java 
+Test 1 : obtenu = 86733
+Attendu = 90000 ERREUR (perdu : 3267)
+Test 2 : obtenu = 90000
+Attendu = 90000 OK
+Test 3 : obtenu = 90000
+Attendu = 90000 OK
+Test 4 : obtenu = 90000
+Attendu = 90000 OK
+Test 5 : obtenu = 90000
+Attendu = 90000 OK
+Test 6 : obtenu = 90000
+Attendu = 90000 OK
+Test 7 : obtenu = 90000
+Attendu = 90000 OK
+Test 8 : obtenu = 90000
+Attendu = 90000 OK
+Test 9 : obtenu = 90000
+Attendu = 90000 OK
+Test 10 : obtenu = 90000
+Attendu = 90000 OK
+Test 11 : obtenu = 90000
+Attendu = 90000 OK
+Test 12 : obtenu = 90000
+Attendu = 90000 OK
+Test 13 : obtenu = 90000
+Attendu = 90000 OK
+Test 14 : obtenu = 90000
+Attendu = 90000 OK
+Test 15 : obtenu = 90000
+Attendu = 90000 OK
+Test 16 : obtenu = 90000
+Attendu = 90000 OK
+Test 17 : obtenu = 90000
+Attendu = 90000 OK
+Test 18 : obtenu = 90000
+Attendu = 90000 OK
+Test 19 : obtenu = 90000
+Attendu = 90000 OK
+Test 20 : obtenu = 90000
+Attendu = 90000 OK
+Test 21 : obtenu = 90000
+Attendu = 90000 OK
+Test 22 : obtenu = 90000
+Attendu = 90000 OK
+Test 23 : obtenu = 90000
+Attendu = 90000 OK
+Test 24 : obtenu = 90000
+Attendu = 90000 OK
+Test 25 : obtenu = 90000
+Attendu = 90000 OK
+Test 26 : obtenu = 90000
+Attendu = 90000 OK
+Test 27 : obtenu = 90000
+Attendu = 90000 OK
+Test 28 : obtenu = 90000
+Attendu = 90000 OK
+Test 29 : obtenu = 90000
+Attendu = 90000 OK
+Test 30 : obtenu = 90000
+Attendu = 90000 OK
+Test 31 : obtenu = 90000
+Attendu = 90000 OK
+Test 32 : obtenu = 90000
+Attendu = 90000 OK
+Test 33 : obtenu = 90000
+Attendu = 90000 OK
+Test 34 : obtenu = 90000
+Attendu = 90000 OK
+Test 35 : obtenu = 90000
+Attendu = 90000 OK
+Test 36 : obtenu = 90000
+Attendu = 90000 OK
+Test 37 : obtenu = 90000
+Attendu = 90000 OK
+Test 38 : obtenu = 90000
+Attendu = 90000 OK
+Test 39 : obtenu = 90000
+Attendu = 90000 OK
+Test 40 : obtenu = 90000
+Attendu = 90000 OK
+Test 41 : obtenu = 90000
+Attendu = 90000 OK
+Test 42 : obtenu = 90000
+Attendu = 90000 OK
+Test 43 : obtenu = 90000
+Attendu = 90000 OK
+Test 44 : obtenu = 90000
+Attendu = 90000 OK
+Test 45 : obtenu = 90000
+Attendu = 90000 OK
+Test 46 : obtenu = 90000
+Attendu = 90000 OK
+Test 47 : obtenu = 90000
+Attendu = 90000 OK
+Test 48 : obtenu = 90000
+Attendu = 90000 OK
+Test 49 : obtenu = 90000
+Attendu = 90000 OK
+Test 50 : obtenu = 90000
+Attendu = 90000 OK
+
+----- BILAN -----
+Threads            : 9
+Incréments/thread  : 10000
+Résultats corrects : 49/50 (98.0 %)
+Minimum obtenu     : 86733
+Maximum obtenu     : 90000
+Attendu            : 90000
+
+		9E TEST : Sur 50 test simples avec bilan + NB_INCREMENTS = 1111111
+java TestCompteur.java 
+Test 1 : obtenu = 6909720
+Attendu = 9999999 ERREUR (perdu : 3090279)
+Test 2 : obtenu = 8856271
+Attendu = 9999999 ERREUR (perdu : 1143728)
+Test 3 : obtenu = 8718061
+Attendu = 9999999 ERREUR (perdu : 1281938)
+Test 4 : obtenu = 6788517
+Attendu = 9999999 ERREUR (perdu : 3211482)
+Test 5 : obtenu = 9874703
+Attendu = 9999999 ERREUR (perdu : 125296)
+Test 6 : obtenu = 7171654
+Attendu = 9999999 ERREUR (perdu : 2828345)
+Test 7 : obtenu = 7512154
+Attendu = 9999999 ERREUR (perdu : 2487845)
+Test 8 : obtenu = 6023368
+Attendu = 9999999 ERREUR (perdu : 3976631)
+Test 9 : obtenu = 7539027
+Attendu = 9999999 ERREUR (perdu : 2460972)
+Test 10 : obtenu = 7687411
+Attendu = 9999999 ERREUR (perdu : 2312588)
+Test 11 : obtenu = 6622262
+Attendu = 9999999 ERREUR (perdu : 3377737)
+Test 12 : obtenu = 7622255
+Attendu = 9999999 ERREUR (perdu : 2377744)
+Test 13 : obtenu = 3296713
+Attendu = 9999999 ERREUR (perdu : 6703286)
+Test 14 : obtenu = 8207274
+Attendu = 9999999 ERREUR (perdu : 1792725)
+Test 15 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 16 : obtenu = 8888888
+Attendu = 9999999 ERREUR (perdu : 1111111)
+Test 17 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 18 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 19 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 20 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 21 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 22 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 23 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 24 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 25 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 26 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 27 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 28 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 29 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 30 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 31 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 32 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 33 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 34 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 35 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 36 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 37 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 38 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 39 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 40 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 41 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 42 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 43 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 44 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 45 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 46 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 47 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 48 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 49 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 50 : obtenu = 9999999
+Attendu = 9999999 OK
+
+----- BILAN -----
+Threads            : 9
+Incréments/thread  : 1111111
+Résultats corrects : 35/50 (70.0 %)
+Minimum obtenu     : 3296713
+Maximum obtenu     : 9999999
+Attendu            : 9999999
+
+		10E TEST : Sur 50 test simples avec bilan + NB_INCREMENTS = 10000000
+java TestCompteur.java 
+Test 1 : obtenu = 48799699
+Attendu = 90000000 ERREUR (perdu : 41200301)
+Test 2 : obtenu = 49463066
+Attendu = 90000000 ERREUR (perdu : 40536934)
+Test 3 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 4 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 5 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 6 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 7 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 8 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 9 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 10 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 11 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 12 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 13 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 14 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 15 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 16 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 17 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 18 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 19 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 20 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 21 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 22 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 23 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 24 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 25 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 26 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 27 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 28 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 29 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 30 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 31 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 32 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 33 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 34 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 35 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 36 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 37 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 38 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 39 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 40 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 41 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 42 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 43 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 44 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 45 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 46 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 47 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 48 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 49 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 50 : obtenu = 90000000
+Attendu = 90000000 OK
+
+----- BILAN -----
+Threads            : 9
+Incréments/thread  : 10000000
+Résultats corrects : 48/50 (96.0 %)
+Minimum obtenu     : 48799699
+Maximum obtenu     : 90000000
+Attendu            : 90000000
+
+INTERPRETATION ET CONCLUSION DES TESTS 7 à 10 : 
+
+	Avec très peu d’opérations (100), aucune erreur observée, mais le code n’est pas pour autant 
+correct. Chaque thread termine ses 100 incréments avant que le suivant ait fini de démarrer. 
+Les threads ne se chevauchent presque jamais.
+	
+	Les erreurs apparaissent dès 10 000 incréments. Le chevauchement devient possible, et dès 
+qu’il a lieu, des incréments se perdent.
+	Plus d’opérations signifie des pertes plus grosses en valeur absolue. On perd quelques 
+milliers d’incréments à 10 000, des millions à 1 111 111 et des dizaines de millions à 
+10 000 000.
+
+	En revanche, le pourcentage de tests corrects ne baisse pas régulièrement. Il passe de 98 % 
+à 70 % puis remonte à 96 %. La phrase « plus d’opérations, plus de problèmes » est donc vraie 
+pour l’ampleur des pertes, mais pas pour la fréquence des erreurs.
+
+Ce qui est surprenant : les erreurs sont toutes au début
+	Dans chaque série, les erreurs sont concentrées dans les premiers tests, puis tout devient 
+correct. Par exemple, 1ère série : erreurs aux tests 1 à 12, puis 38 OK d’affilée. Série à 
+10 000 000 : seuls les tests 1 et 2 échouent.
+	Je n’avais pas prévu ça mais cela ne signifie pas que le bug a pas disparu pour autant.
+	
+Hypothèse d'une IA (Claude) : 
+	"La JVM optimise la boucle en cours de route (compilation JIT). 
+	Au début, compteurGlobal++ est exécuté de façon lente et fidèle, avec des lectures et 
+	écritures en mémoire à chaque tour. Une fois la boucle compilée, la JVM peut garder le 
+	compteur dans un registre du processeur et ne l’écrire en mémoire qu’à la fin de la boucle. 
+	Comme la variable n’est pas déclarée volatile, elle en a le droit. 
+	La fenêtre de collision devient alors minuscule.
+
+	Un indice dans tes données appuie cette hypothèse : plusieurs pertes valent exactement un 
+	multiple de 1 111 111, soit le travail complet d’un ou plusieurs threads :
+
+	2 threads, test 6 : perdu 1 111 111
+	5 threads, test 22 : perdu 4 444 444 (4 threads)
+	9 threads, test 16 : perdu 1 111 111
+
+	Cela correspond à un thread qui a lu la valeur, fait toute sa boucle « dans sa tête », puis 
+	écrit son résultat en écrasant celui des autres.
+
+	Pour tester l’hypothèse : désactive le JIT avec java -Xint TestCompteur (plus lent, c’est normal).
+	Si elle est juste, tu devrais avoir des erreurs sur presque tous les tests, et non plus 
+	seulement au début. Attention, c’est une hypothèse, pas une certitude : si tu obtiens autre 
+	chose, dis-le-moi." --> non testé pour l'instant (à voir plus tard ou avec le professeur).
+
+			CONCLUSION GENERALE DES EXPERIENCES (memo)
+			
+	Le problème. compteurGlobal++ n’est pas une opération unique. Elle se décompose en LOAD, ADD et 
+STORE. Si deux threads font le LOAD avant que l’un des deux ait fait le STORE, un incrément est 
+écrasé et perdu. --> aide à la compréhension avec la même IA
+
+	CompteurDangereux.java : le compteur partagé, avec le bug volontaire. 
+	TestCompteur.java : crée N threads qui incrémentent le même compteur, les lance tous avant 
+d’attendre (boucles start() puis join() séparées), compare au résultat attendu, et répète 50 fois.
+
+	Pourquoi le raisonnement du 2,1 milliard (1111111) ? Pour exclure une autre cause d’erreur 
+	(le dépassement d’un int). 
+	9 999 999 tient largement dans un int, donc les erreurs viennent bien de la concurrence.
+
+Ce que les expériences ont montré.
+
+- Un seul thread : jamais d’erreur. Le danger vient du partage d’une variable modifiable entre 
+  plusieurs threads.
+- Plusieurs threads : des résultats faux, différents à chaque exécution (non déterminisme).
+- Peu d’opérations : on ne voit rien, mais le bug est là. Un test qui passe ne prouve pas que le 
+  code est correct.
+
+Beaucoup d’opérations : les pertes sont énormes quand l’erreur se produit.
+
+	Les erreurs sont concentrées au début des séries, ce qui suggère l’influence de 
+l’optimisation de la JVM. Donc le comportement d’un programme concurrent dépend aussi de la 
+machine et de la JVM, pas seulement de ton code. //Même raisonnement IA
+
