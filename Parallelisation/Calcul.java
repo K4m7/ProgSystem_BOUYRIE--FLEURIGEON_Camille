@@ -35,7 +35,7 @@ public class Calcul extends Thread {
             resultat += this.valeur * this.valeur + this.valeur;
         }
 
-        sommeTotale += resultat;
+        sommeTotale += resultat; // Réduction
         System.out.println("Traitement de " + this.valeur + " terminé : " + resultat);
         
         long duree = (System.nanoTime() - debut) / 1_000_000;
