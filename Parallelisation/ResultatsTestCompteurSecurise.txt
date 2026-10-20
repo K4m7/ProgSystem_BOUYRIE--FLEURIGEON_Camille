@@ -1,0 +1,247 @@
+		1ER TEST : Sur 50 tests (NB_INCREMENTS = 1111111)
+
+java TestMutex.java
+Test 1 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 2 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 3 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 4 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 5 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 6 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 7 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 8 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 9 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 10 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 11 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 12 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 13 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 14 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 15 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 16 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 17 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 18 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 19 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 20 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 21 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 22 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 23 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 24 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 25 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 26 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 27 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 28 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 29 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 30 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 31 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 32 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 33 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 34 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 35 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 36 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 37 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 38 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 39 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 40 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 41 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 42 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 43 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 44 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 45 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 46 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 47 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 48 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 49 : obtenu = 9999999
+Attendu = 9999999 OK
+Test 50 : obtenu = 9999999
+Attendu = 9999999 OK
+
+----- BILAN -----
+Threads            : 9
+Incréments/thread  : 1111111
+Résultats corrects : 50/50 (100.0 %)
+Minimum obtenu     : 9999999
+Maximum obtenu     : 9999999
+Attendu            : 9999999
+
+		2e TEST : Sur 50 tests (NB_INCREMENTS = 10000000) --> TRES LENT (environ 4min)
+		
+java TestMutex.java
+Test 1 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 2 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 3 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 4 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 5 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 6 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 7 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 8 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 9 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 10 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 11 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 12 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 13 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 14 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 15 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 16 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 17 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 18 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 19 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 20 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 21 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 22 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 23 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 24 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 25 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 26 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 27 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 28 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 29 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 30 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 31 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 32 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 33 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 34 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 35 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 36 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 37 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 38 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 39 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 40 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 41 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 42 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 43 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 44 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 45 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 46 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 47 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 48 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 49 : obtenu = 90000000
+Attendu = 90000000 OK
+Test 50 : obtenu = 90000000
+Attendu = 90000000 OK
+
+----- BILAN -----
+Threads            : 9
+Incréments/thread  : 10000000
+Résultats corrects : 50/50 (100.0 %)
+Minimum obtenu     : 90000000
+Maximum obtenu     : 90000000
+Attendu            : 90000000
+
+
+CONCLUSIONS ET COMPARAISON DES TESTS: 
+- 50/50 réussis : Contrairement au compteur dangereux, tous les tests affichent OK. 
+  Plus aucune perte n'est constatée, peu importe le nombre de threads ou le nombre 
+  d'incréments.   
+- Test plus lent
+- Stabilité totale : Le minimum obtenu est égal au maximum obtenu, qui est lui-même 
+  strictement égal à la valeur attendue. Le comportement est enfin déterministe.
+
+CONCLUSION GENERALE:
+	Le problème initial : Sans protection, compteurGlobal++ n'est pas atomique 
+(elle se découpe en lecture, modification, écriture). Des threads s'entrecroisaient et 
+écrasaient les résultats des autres, provoquant des pertes massives.   
+
+	La solution apportée (Le Mutex / synchronized) : En introduisant un objet verrou et 
+un bloc synchronized, on force les threads à faire la queue (à attendre). Un seul thread 
+à la fois peut entrer dans la section critique. Les autres se mettent en pause (bloquent) 
+et attendent leur tour.   
+
+	Le compromis (Sécurité vs Performance) : Le code est désormais 100 % fiable et 
+mathématiquement correct. En contrepartie, il est un peu plus lent à s'exécuter, car les 
+threads perdent du temps à attendre que le verrou se libère. 
+	--> Règle d’or de la programmation concurrente.
