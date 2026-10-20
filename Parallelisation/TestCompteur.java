@@ -63,5 +63,5 @@ public class TestCompteur {
 		System.out.println("Minimum obtenu     : " + min);
 		System.out.println("Maximum obtenu     : " + max);
 		System.out.println("Attendu            : " + ATTENDU);
-    }
+    } 
 }
