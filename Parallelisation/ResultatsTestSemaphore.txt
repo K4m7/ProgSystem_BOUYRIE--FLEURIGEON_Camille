@@ -1,0 +1,491 @@
+Exemple de retour console du TestSemaphore.java : 
+
+"[Etat buffer : Prod 1] Produit ajouté : 77
+Buffer : 1/5
+Total produits : 1
+[Etat buffer : Prod 2] Produit ajouté : 74
+Buffer : 2/5
+Total produits : 2
+[Consommation : Cons 1] Consommé : 77
+Buffer : 1/5Total consommés : 1
+[Consommation : Cons 2] Consommé : 74
+Buffer : 0/5Total consommés : 2
+[Etat buffer : Prod 1] Produit ajouté : 3
+Buffer : 1/5
+Total produits : 3
+[Etat buffer : Prod 2] Produit ajouté : 14
+Buffer : 2/5
+Total produits : 4
+[Consommation : Cons 3] Consommé : 3
+Buffer : 1/5Total consommés : 3
+[Consommation : Cons 2] Consommé : 14
+Buffer : 0/5Total consommés : 4
+[Etat buffer : Prod 2] Produit ajouté : 27
+Buffer : 1/5
+Total produits : 5
+[Etat buffer : Prod 1] Produit ajouté : 76
+Buffer : 2/5
+Total produits : 6
+[Consommation : Cons 1] Consommé : 27
+Buffer : 1/5Total consommés : 5
+[Consommation : Cons 3] Consommé : 76
+Buffer : 0/5Total consommés : 6
+[Etat buffer : Prod 1] Produit ajouté : 12
+Buffer : 1/5
+Total produits : 7
+[Etat buffer : Prod 2] Produit ajouté : 16
+Buffer : 2/5
+Total produits : 8
+[Consommation : Cons 2] Consommé : 12
+Buffer : 1/5Total consommés : 7
+[Consommation : Cons 3] Consommé : 16
+Buffer : 0/5Total consommés : 8
+[Etat buffer : Prod 2] Produit ajouté : 24
+Buffer : 1/5
+Total produits : 9
+[Etat buffer : Prod 1] Produit ajouté : 14
+Buffer : 2/5
+Total produits : 10
+[Consommation : Cons 1] Consommé : 24
+Buffer : 1/5Total consommés : 9
+[Consommation : Cons 2] Consommé : 14
+Buffer : 0/5Total consommés : 10
+[Etat buffer : Prod 1] Produit ajouté : 81
+Buffer : 1/5
+Total produits : 11
+[Etat buffer : Prod 2] Produit ajouté : 50
+Buffer : 2/5
+Total produits : 12
+[Consommation : Cons 3] Consommé : 81
+Buffer : 1/5Total consommés : 11
+[Consommation : Cons 2] Consommé : 50
+Buffer : 0/5Total consommés : 12
+[Etat buffer : Prod 2] Produit ajouté : 3
+Buffer : 1/5
+Total produits : 13
+[Etat buffer : Prod 1] Produit ajouté : 85
+Buffer : 2/5
+Total produits : 14
+[Consommation : Cons 1] Consommé : 3
+Buffer : 1/5Total consommés : 13
+[Consommation : Cons 3] Consommé : 85
+Buffer : 0/5Total consommés : 14
+[Etat buffer : Prod 2] Produit ajouté : 92
+Buffer : 1/5
+Total produits : 15
+[Etat buffer : Prod 1] Produit ajouté : 84
+Buffer : 2/5
+Total produits : 16
+[Consommation : Cons 2] Consommé : 92
+Buffer : 1/5Total consommés : 15
+[Consommation : Cons 1] Consommé : 84
+Buffer : 0/5Total consommés : 16
+[Etat buffer : Prod 2] Produit ajouté : 63
+Buffer : 1/5
+Total produits : 17
+[Etat buffer : Prod 1] Produit ajouté : 25
+Buffer : 2/5
+Total produits : 18
+[Consommation : Cons 3] Consommé : 63
+Buffer : 1/5Total consommés : 17
+[Consommation : Cons 1] Consommé : 25
+Buffer : 0/5Total consommés : 18
+[Etat buffer : Prod 2] Produit ajouté : 7
+Buffer : 1/5
+Total produits : 19
+[Etat buffer : Prod 1] Produit ajouté : 17
+Buffer : 2/5
+Total produits : 20
+[Consommation : Cons 2] Consommé : 7
+Buffer : 1/5Total consommés : 19
+[Consommation : Cons 1] Consommé : 17
+Buffer : 0/5Total consommés : 20
+[Etat buffer : Prod 2] Produit ajouté : 40
+Buffer : 1/5
+Total produits : 21
+[Etat buffer : Prod 1] Produit ajouté : 8
+Buffer : 2/5
+Total produits : 22
+[Consommation : Cons 3] Consommé : 40
+Buffer : 1/5Total consommés : 21
+[Consommation : Cons 2] Consommé : 8
+Buffer : 0/5Total consommés : 22
+[Etat buffer : Prod 1] Produit ajouté : 40
+Buffer : 1/5
+Total produits : 23
+[Etat buffer : Prod 2] Produit ajouté : 94
+Buffer : 2/5
+Total produits : 24
+[Consommation : Cons 1] Consommé : 40
+Buffer : 1/5Total consommés : 23
+[Consommation : Cons 3] Consommé : 94
+Buffer : 0/5Total consommés : 24
+[Etat buffer : Prod 2] Produit ajouté : 51
+Buffer : 1/5
+Total produits : 25
+[Etat buffer : Prod 1] Produit ajouté : 3
+Buffer : 2/5
+Total produits : 26
+[Consommation : Cons 2] Consommé : 51
+Buffer : 1/5Total consommés : 25
+[Consommation : Cons 3] Consommé : 3
+Buffer : 0/5Total consommés : 26
+[Etat buffer : Prod 2] Produit ajouté : 26
+Buffer : 1/5
+Total produits : 27
+[Etat buffer : Prod 1] Produit ajouté : 92
+Buffer : 2/5
+Total produits : 28
+[Consommation : Cons 1] Consommé : 26
+Buffer : 1/5Total consommés : 27
+[Consommation : Cons 2] Consommé : 92
+Buffer : 0/5Total consommés : 28
+[Etat buffer : Prod 1] Produit ajouté : 72
+Buffer : 1/5
+Total produits : 29
+[Etat buffer : Prod 2] Produit ajouté : 22
+Buffer : 2/5
+Total produits : 30
+[Consommation : Cons 3] Consommé : 72
+Buffer : 1/5Total consommés : 29
+[Consommation : Cons 1] Consommé : 22
+Buffer : 0/5Total consommés : 30
+[BILAN SCÉNARIO ÉQUILIBRÉ]
+Produits totaux : 0
+Consommés totaux : 0
+
+-- DÉBUT SCÉNARIO DÉSEQUILIBRÉ --
+[Etat buffer : Prod 3] Produit ajouté : 34
+Buffer : 1/5
+Total produits : 31
+[Etat buffer : Prod 5] Produit ajouté : 18
+Buffer : 2/5
+Total produits : 32
+[Etat buffer : Prod 4] Produit ajouté : 21
+Buffer : 3/5
+Total produits : 33
+[Etat buffer : Prod 6] Produit ajouté : 46
+Buffer : 4/5
+Total produits : 34
+[Etat buffer : Prod 7] Produit ajouté : 97
+Buffer : 5/5
+Total produits : 35
+[Consommation : Cons 4] Consommé : 34
+Buffer : 4/5Total consommés : 31
+[Consommation : Cons 5] Consommé : 18
+Buffer : 3/5Total consommés : 32
+[Etat buffer : Prod 4] Produit ajouté : 56
+Buffer : 4/5
+Total produits : 36
+[Etat buffer : Prod 5] Produit ajouté : 26
+Buffer : 5/5
+Total produits : 37
+[Consommation : Cons 4] Consommé : 21
+Buffer : 4/5Total consommés : 33
+[Consommation : Cons 5] Consommé : 46
+Buffer : 3/5Total consommés : 34
+[Etat buffer : Prod 6] Produit ajouté : 1
+Buffer : 4/5
+Total produits : 38
+[Etat buffer : Prod 7] Produit ajouté : 64
+Buffer : 5/5
+Total produits : 39
+[Consommation : Cons 4] Consommé : 97
+Buffer : 4/5Total consommés : 35
+[Consommation : Cons 5] Consommé : 56
+Buffer : 3/5Total consommés : 36
+[Etat buffer : Prod 3] Produit ajouté : 12
+Buffer : 4/5
+Total produits : 40
+[Etat buffer : Prod 5] Produit ajouté : 46
+Buffer : 5/5
+Total produits : 41
+[Consommation : Cons 4] Consommé : 26
+Buffer : 4/5Total consommés : 37
+[Consommation : Cons 5] Consommé : 1
+Buffer : 3/5Total consommés : 38
+[Etat buffer : Prod 6] Produit ajouté : 19
+Buffer : 4/5
+Total produits : 42
+[Etat buffer : Prod 4] Produit ajouté : 66
+Buffer : 5/5
+Total produits : 43
+[Consommation : Cons 4] Consommé : 64
+Buffer : 4/5Total consommés : 39
+[Consommation : Cons 5] Consommé : 12
+Buffer : 3/5Total consommés : 40
+[Etat buffer : Prod 7] Produit ajouté : 46
+Buffer : 4/5
+Total produits : 44
+[Etat buffer : Prod 5] Produit ajouté : 69
+Buffer : 5/5
+Total produits : 45
+[Consommation : Cons 5] Consommé : 46
+Buffer : 4/5Total consommés : 41
+[Consommation : Cons 4] Consommé : 19
+Buffer : 3/5Total consommés : 42
+[Etat buffer : Prod 3] Produit ajouté : 66
+Buffer : 4/5
+Total produits : 46
+[Etat buffer : Prod 6] Produit ajouté : 66
+Buffer : 5/5
+Total produits : 47
+[Consommation : Cons 5] Consommé : 66
+Buffer : 4/5Total consommés : 43
+[Consommation : Cons 4] Consommé : 46
+Buffer : 3/5Total consommés : 44
+[Etat buffer : Prod 4] Produit ajouté : 49
+Buffer : 4/5
+Total produits : 48
+[Etat buffer : Prod 7] Produit ajouté : 6
+Buffer : 5/5
+Total produits : 49
+[Consommation : Cons 5] Consommé : 69
+Buffer : 4/5Total consommés : 45
+[Consommation : Cons 4] Consommé : 66
+Buffer : 3/5Total consommés : 46
+[Etat buffer : Prod 5] Produit ajouté : 71
+Buffer : 4/5
+Total produits : 50
+[Etat buffer : Prod 6] Produit ajouté : 79
+Buffer : 5/5
+Total produits : 51
+[Consommation : Cons 5] Consommé : 66
+Buffer : 4/5Total consommés : 47
+[Consommation : Cons 4] Consommé : 49
+Buffer : 3/5Total consommés : 48
+[Etat buffer : Prod 3] Produit ajouté : 52
+Buffer : 4/5
+Total produits : 52
+[Etat buffer : Prod 4] Produit ajouté : 80
+Buffer : 5/5
+Total produits : 53
+[Consommation : Cons 4] Consommé : 6
+Buffer : 4/5Total consommés : 49
+[Consommation : Cons 5] Consommé : 71
+Buffer : 3/5Total consommés : 50
+[Etat buffer : Prod 7] Produit ajouté : 17
+Buffer : 4/5
+Total produits : 54
+[Etat buffer : Prod 5] Produit ajouté : 76
+Buffer : 5/5
+Total produits : 55
+[Consommation : Cons 4] Consommé : 79
+Buffer : 4/5Total consommés : 51
+[Consommation : Cons 5] Consommé : 52
+Buffer : 3/5Total consommés : 52
+[Etat buffer : Prod 6] Produit ajouté : 15
+Buffer : 4/5
+Total produits : 56
+[Etat buffer : Prod 3] Produit ajouté : 76
+Buffer : 5/5
+Total produits : 57
+[Consommation : Cons 4] Consommé : 80
+Buffer : 4/5Total consommés : 53
+[Consommation : Cons 5] Consommé : 17
+Buffer : 3/5Total consommés : 54
+[Etat buffer : Prod 4] Produit ajouté : 39
+Buffer : 4/5
+Total produits : 58
+[Etat buffer : Prod 5] Produit ajouté : 49
+Buffer : 5/5
+Total produits : 59
+[Consommation : Cons 4] Consommé : 76
+Buffer : 4/5Total consommés : 55
+[Consommation : Cons 5] Consommé : 15
+Buffer : 3/5Total consommés : 56
+[Etat buffer : Prod 7] Produit ajouté : 49
+Buffer : 4/5
+Total produits : 60
+[Etat buffer : Prod 3] Produit ajouté : 45
+Buffer : 5/5
+Total produits : 61
+[Consommation : Cons 5] Consommé : 76
+Buffer : 4/5Total consommés : 57
+[Consommation : Cons 4] Consommé : 39
+Buffer : 3/5Total consommés : 58
+[Etat buffer : Prod 6] Produit ajouté : 35
+Buffer : 4/5
+Total produits : 62
+[Etat buffer : Prod 5] Produit ajouté : 1
+Buffer : 5/5
+Total produits : 63
+[Consommation : Cons 5] Consommé : 49
+Buffer : 4/5Total consommés : 59
+[Consommation : Cons 4] Consommé : 49
+Buffer : 3/5Total consommés : 60
+[Etat buffer : Prod 4] Produit ajouté : 1
+Buffer : 4/5
+Total produits : 64
+[Etat buffer : Prod 3] Produit ajouté : 50
+Buffer : 5/5
+Total produits : 65
+[Consommation : Cons 5] Consommé : 45
+Buffer : 4/5Total consommés : 61
+[Consommation : Cons 4] Consommé : 35
+Buffer : 3/5Total consommés : 62
+[Etat buffer : Prod 7] Produit ajouté : 73
+Buffer : 4/5
+Total produits : 66
+[Etat buffer : Prod 6] Produit ajouté : 48
+Buffer : 5/5
+Total produits : 67
+[Consommation : Cons 4] Consommé : 1
+Buffer : 4/5Total consommés : 63
+[Consommation : Cons 5] Consommé : 1
+Buffer : 3/5Total consommés : 64
+[Etat buffer : Prod 5] Produit ajouté : 4
+Buffer : 4/5
+Total produits : 68
+[Etat buffer : Prod 3] Produit ajouté : 45
+Buffer : 5/5
+Total produits : 69
+[Consommation : Cons 4] Consommé : 50
+Buffer : 4/5Total consommés : 65
+[Consommation : Cons 5] Consommé : 73
+Buffer : 3/5Total consommés : 66
+[Etat buffer : Prod 4] Produit ajouté : 27
+Buffer : 4/5
+Total produits : 70
+[Etat buffer : Prod 6] Produit ajouté : 32
+Buffer : 5/5
+Total produits : 71
+[Consommation : Cons 4] Consommé : 48
+Buffer : 4/5Total consommés : 67
+[Consommation : Cons 5] Consommé : 4
+Buffer : 3/5Total consommés : 68
+[Etat buffer : Prod 7] Produit ajouté : 5
+Buffer : 4/5
+Total produits : 72
+[Etat buffer : Prod 3] Produit ajouté : 90
+Buffer : 5/5
+Total produits : 73
+[Consommation : Cons 4] Consommé : 45
+Buffer : 4/5Total consommés : 69
+[Consommation : Cons 5] Consommé : 27
+Buffer : 3/5Total consommés : 70
+[Etat buffer : Prod 5] Produit ajouté : 84
+Buffer : 4/5
+Total produits : 74
+[Etat buffer : Prod 6] Produit ajouté : 36
+Buffer : 5/5
+Total produits : 75
+[Consommation : Cons 5] Consommé : 32
+Buffer : 4/5Total consommés : 71
+[Consommation : Cons 4] Consommé : 5
+Buffer : 3/5Total consommés : 72
+[Etat buffer : Prod 4] Produit ajouté : 90
+Buffer : 4/5
+Total produits : 76
+[Etat buffer : Prod 7] Produit ajouté : 24
+Buffer : 5/5
+Total produits : 77
+[Consommation : Cons 5] Consommé : 90
+Buffer : 4/5Total consommés : 73
+[Consommation : Cons 4] Consommé : 84
+Buffer : 3/5Total consommés : 74
+[Etat buffer : Prod 3] Produit ajouté : 61
+Buffer : 4/5
+Total produits : 78
+[Etat buffer : Prod 7] Produit ajouté : 3
+Buffer : 5/5
+Total produits : 79
+[Consommation : Cons 5] Consommé : 36
+Buffer : 4/5Total consommés : 75
+[Consommation : Cons 4] Consommé : 90
+Buffer : 3/5Total consommés : 76
+[Etat buffer : Prod 4] Produit ajouté : 37
+Buffer : 4/5
+Total produits : 80
+[Consommation : Cons 5] Consommé : 24
+Buffer : 3/5Total consommés : 77
+[Consommation : Cons 4] Consommé : 61
+Buffer : 2/5Total consommés : 78
+[Consommation : Cons 5] Consommé : 3
+Buffer : 1/5Total consommés : 79
+[Consommation : Cons 4] Consommé : 37
+Buffer : 0/5Total consommés : 80
+[BILAN SCÉNARIO ÉQUILIBRÉ]
+Produits totaux : 0
+Consommés totaux : 0"
+
+CONCLUSION ET ANALYSE DES RÉSULTATS DU TP - PRODUCTEUR / CONSOMMATEUR
+
+
+1. SCÉNARIO ÉQUILIBRÉ (2 Producteurs / 3 Consommateurs)
+	- Constat : Le buffer oscille entre 0/5 et 2/5 d'occupation.
+	
+	- Interprétation : La consommation absorbe facilement la production. 
+	  La synchronisation est fluide et il n'y a aucun temps d'attente prolongé 
+	  pour les threads.
+
+2. SCÉNARIO DÉSÉQUILIBRÉ (5 Producteurs / 2 Consommateurs)
+
+	- Constat : Le buffer atteint immédiatement sa limite (5/5) et reste presque 
+	  constamment plein (4/5 ou 5/5).
+	  
+	- Interprétation : Il y a saturation de la production. Ce test valide le bon 
+	  fonctionnement du contrôle de flux : lorsque le buffer est plein, le sémaphore 
+	  'placesLibres' (mis à 0) bloque les producteurs. 
+	  Aucun risque de dépassement de capacité (buffer overflow).
+
+3. RÔLE ET VALIDATION DES SÉMAPHORES
+
+	- mutexBuffer (Exclusion mutuelle) :
+		Empêche les accès simultanés au tableau 'buffer' et préserve l'intégrité des données.
+
+	- placesLibres (Taille max = 5) :
+		Bloque les producteurs quand le buffer est rempli.
+
+	- elementsDisponibles :
+		Bloque les consommateurs quand le buffer est vide (évite de lire du vide).
+
+4. CONCLUSION
+
+L'algorithme gère correctement la concurrence :
+	- Pas de race condition grâce à l'exclusion mutuelle.
+	- Pas de corruption de mémoire ni de débordement grâce aux sémaphores de comptage.
+
+5. QUESTIONS TP : 
+
+Questions d’analyse importantes*
+
+    Ordre des acquire() : Que se passe-t-il si on inverse placesLibres.acquire() 
+	et mutexBuffer.acquire() ?
+		- Risque : Interblocage total.
+		
+		- Explication : Si le producteur acquiert d'abord le 'mutexBuffer' alors que 
+		  le buffer est plein, puis tente d'acquérir 'placesLibres', il se bloque en 
+		  conservant le verrou exclusif. 
+		  Aucun consommateur ne pourra alors accéder au buffer pour le vider, car le 
+		  mutex est verrouillé. Le programme se fige définitivement.
+	
+	
+    Cohérence : Les compteurs de production/consommation s’équilibrent-ils ?
+		- Observation : Oui, les compteurs globaux s'équilibrent parfaitement à la fin 
+		  de l'exécution.
+		  (par exemple, 30 produits créés pour 30 consommés dans le scénario équilibré)
+		
+		- Déduction : Cela prouve l'intégrité des données. Aucun élément n'est perdu, 
+		  écrasé ou dupliqué, ce qui valide l'efficacité combinée de l'exclusion mutuelle 
+		  et de la synchronisation.
+	
+	
+    Blocages : Dans quelles conditions le système peut-il se bloquer ?
+		- Buffer plein : Les producteurs se bloquent temporairement 
+		  (sur 'placesLibres.acquire()') lorsque le buffer atteint sa capacité maximale, 
+		  en attendant qu'un consommateur libère une place.
+		  
+		- Buffer vide : Les consommateurs se bloquent temporairement 
+		  (sur 'elementsDisponibles.acquire()') lorsque le buffer est vide, en attendant 
+		  qu'un producteur génère un nouvel élément.
+		  
+		- Note : Ce blocage est un contrôle de flux normal et sain. Il évite le gaspillage
+ 		  CPU, contrairement à un interblocage (deadlock) dû à une mauvaise conception.
+
+*Aide d'une IA pour faciliter mon interpretation et ma compréhension des différentes étapes du
+ code et des résultats. 
+
+"Cette architecture avec sémaphores est un pattern classique de la programmation 
+concurrente, réutilisable dans de nombreux contextes (pools de ressources, pipelines de 
+traitement, impression, etc.)."
