@@ -12,6 +12,22 @@ public class ServeurChat {
 			 * Mais attention : l’itération n’est pas automatiquement thread-safe !
 			 */
 
+	private static void broadcastExcept(String message, PrintWriter emetteur) {
+        synchronized (clients) {
+            for (PrintWriter writer : clients) {
+                if (writer != emetteur) {  // Exclut l'émetteur
+                    writer.println(">>> " + message);
+                }
+            }
+        }
+    }
+		/**
+		 * - La comparaison writer != out utilise l’identité d’objet (pas equals())
+		 * - Chaque PrintWriter est unique par connexion, donc cette comparaison 
+		 *   identifie précisément l’émetteur
+         * - Cette technique évite la redondance : l’utilisateur voit son message 
+		 *   localement sans le recevoir du serveur
+		 */
 
     public static void main(String[] args) throws Exception {
         ServerSocket serverSocket = new ServerSocket(5000);
@@ -64,7 +80,17 @@ public class ServeurChat {
 				 * Itérer sur la copie sans verrou
 				 * Gérer les erreurs d’envoi individuellement
 				 */
-
         }
+		
+		//AUTRE VARIANTE : Diffusion en excluant l'émetteur
+		/*private void broadcastExcept(String message, PrintWriter outEmetteur) {
+		    synchronized (clients) {
+			    for (PrintWriter writer : clients) {
+				    if (writer != outEmetteur) {  // Compare les références mémoires (identité)
+					    writer.println(">>> " + message);
+				    }
+			    }
+		    }
+	    }*/
     }
 }

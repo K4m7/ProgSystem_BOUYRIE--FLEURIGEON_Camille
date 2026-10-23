@@ -66,6 +66,10 @@ class ClientHandler implements Runnable {
 			PrintWriter out = new PrintWriter(client.getOutputStream(), true);
 			System.out.println("Création des canaux...");
 			
+			synchronized (ServeurChat.clients) {
+                ServeurChat.clients.add(out);
+            }
+			
 			// 2. Boucle d'écho (lecture/écriture)
 			String ligne;
 			while ((ligne = in.readLine()) != null) {
@@ -76,8 +80,15 @@ class ClientHandler implements Runnable {
 					 * Utile pour le debugging et la corrélation des logs
 					 * Peut être personnalisé avec t.setName("Client-" + client.getPort())
 					 */
-
+				ServeurChat.broadcastExcept(ligne, out);
 			}
+			
+			// AUTRE VARIANTE
+		    /*while ((ligne = in.readLine()) != null) {
+			    System.out.println("Message reçu : " + ligne);
+			    broadcastExcept(ligne, out); // Envoie à tous SAUF à l'émetteur courant
+		    }*/
+			
 			System.out.println("Création de la boucle de lecture/écriture...");
 						
 			// 3. Fermeture de la connexion client
@@ -90,13 +101,25 @@ class ClientHandler implements Runnable {
 		} catch (Exception e){
 			System.err.println("Une erreur s'est produite :" + e.getMessage());
 		} finally {
-			try { client.close(); } catch (IOException ignored) {}
+			synchronized (clients) {
+				clients.remove(out);
+			}
+			try { socket.close(); } catch (IOException ignored) {}
+		}
 				/*
 				 * Garantit la fermeture du socket même en cas d’exception (IOException, RuntimeException)
 				 * Le double try-catch gère le cas rare où close() lui-même lève une exception
 				 * Sans ce bloc, un client malveillant pourrait épuiser les descripteurs de fichiers disponibles
 				 */
-		}
-
+				 
+				 /*
+				  * Sans le finally :
+				  * - Si une exception survient, le PrintWriter reste dans la liste
+				  *	- Les futurs broadcasts tentent d’écrire sur un socket fermé → IOException silencieuse
+				  *	- Fuite de mémoire progressive (la liste grossit indéfiniment)
+                  */				  
+		} 
 	}
+
+
 }
